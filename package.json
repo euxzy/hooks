@@ -1,7 +1,6 @@
 {
   "name": "@euxzy/hooks",
   "version": "0.0.1",
-  "private": true,
   "description": "Custom Hooks",
   "type": "module",
   "author": {
