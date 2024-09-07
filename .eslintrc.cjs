@@ -57,7 +57,8 @@ module.exports = {
           {
             argsIgnorePattern: '^_',
             varsIgnorePattern: '^_',
-            caughtErrorsIgnorePattern: '^_'
+            caughtErrorsIgnorePattern: '^_',
+            args: 'none'
           }
         ],
         semi: 'off'
