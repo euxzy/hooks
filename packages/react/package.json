@@ -1,0 +1,39 @@
+{
+  "name": "@euxzy/hooks-react",
+  "version": "0.0.1",
+  "description": "Custom hooks for React",
+  "main": "./dist/index.js",
+  "type": "module",
+  "author": {
+    "name": "euxzy",
+    "url": "https://github.com/euxzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euxzy/hooks.git",
+    "directory": "packages/react"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && npx tsc"
+  },
+  "keywords": [
+    "hooks",
+    "react",
+    "usehooks",
+    "customhooks"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/euxzy/hooks/issues"
+  },
+  "homepage": "https://github.com/euxzy/hooks#readme",
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "react": "^18.3.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  }
+}

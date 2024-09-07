@@ -1,0 +1,52 @@
+{
+  "name": "@euxzy/hooks",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Custom Hooks",
+  "type": "module",
+  "author": {
+    "name": "euxzy",
+    "url": "https://github.com/euxzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euxzy/hooks.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "format": "prettier --write \"packages/**/*.{js,ts,jsx,tsx}\"",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "hooks",
+    "react",
+    "customhooks",
+    "usehooks"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/euxzy/hooks/issues"
+  },
+  "homepage": "https://github.com/euxzy/hooks#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^22.5.4",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "husky": "^9.1.5",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.4.0"
+  }
+}
