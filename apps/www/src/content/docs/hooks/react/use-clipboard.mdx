@@ -1,0 +1,29 @@
+---
+title: useClipboard
+description: Short description.
+---
+
+Detailed description.
+
+## Usage
+
+```tsx
+import { useState } from 'react'
+import { useClipboard } from '@euxzy/hooks-react'
+
+export function App() {
+  const [value, setValue] = useState('Text want to copy.')
+  const [copiedText, copyToClipboard] = useClipboard()
+
+  const handleCopy = () => {
+    copyToClipboard(value)
+  }
+
+  return (
+    <div>
+      <h1>{value}</h1>
+      <button type="button" onClick={() => handleCopy()}>Copy</button>
+    </div>
+  )
+}
+```

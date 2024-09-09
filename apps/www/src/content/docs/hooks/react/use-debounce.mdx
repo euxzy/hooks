@@ -1,0 +1,29 @@
+---
+title: useDebounce
+description: Short description.
+---
+
+Detailed description.
+
+## Usage
+
+```tsx
+import { useState } from 'react'
+import { useDebounce } from '@euxzy/hooks-react'
+
+export function App() {
+  const [value, setValue] = useState('')
+  const debounce = useDebounce(value, 300)
+
+  const handleChange = (e) => {
+    setValue(() => e.target.value)
+  }
+
+  return (
+    <div>
+      <h1>Text: {debounce}</h1>
+      <input type="text" onChange={handleChange} />
+    </div>
+  )
+}
+```

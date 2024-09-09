@@ -1,0 +1,29 @@
+---
+title: useDocumentTitle
+description: Short description.
+---
+
+Detailed description.
+
+## Usage
+
+```tsx
+import { useState } from 'react'
+import { useDocumentTitle } from '@euxzy/hooks-react'
+
+export function App() {
+  const [value, setValue] = useState('Text want to copy.')
+
+  useDocumentTitle(value)
+
+  const handleChange = () => {
+    setValue(() => e.target.value)
+  }
+
+  return (
+    <div>
+      <input type="text" onChange={handleChange} />
+    </div>
+  )
+}
+```

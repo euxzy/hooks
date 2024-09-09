@@ -18,7 +18,7 @@ module.exports = {
     node: true,
     jest: true
   },
-  ignorePatterns: ['.eslintrc.js'],
+  ignorePatterns: ['.eslintrc.js', 'apps/www'],
   overrides: [
     {
       files: ['**/*.{js,jsx,ts,tsx}'],
